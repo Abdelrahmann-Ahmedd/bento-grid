@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size : 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
+html , body {
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #1111;
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%) ;   
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+.grid-content {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box3"
+    "box6 box4 box5 box3"
+    "box6 box4 box5 box3"
+    "box6 box4 box5 box3"
+    "box6 box7 box8 box8"
+    "box6 box7 box8 box8"
+    "box6 box7 box8 box8"
+    ;
+    gap: 20px;
+}
+
+.grid-content div {
+    border-radius: 7px;
+}
+
+.grid-content .box-1 {
+    grid-area: box1;
+    background-color: var(--Yellow-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:0% 5% ;
+}
+
+.grid-content .box-1 p {
+    font-size: 3pc;
+    font-weight: 500;
+    width: 90%;
+    margin-bottom: 20px;
+} 
+
+.grid-content .box-1 span {
+    font-size: 3pc;
+    font-weight: 500;
+    color: var(--Purple-500);
+}
+
+.grid-content .box-1 figure {
+    width: 70%;
+    align-self: center;
+}
+
+.grid-content .box-1 figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-content .box-2 {
+    grid-area: box2;
+    background-color: var(--Purple-500);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+
+.grid-content .box-2 h1 {
+    font-size: 4pc;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-content .box-2 h1 span {
+    font-size: 4pc;
+    font-weight: 500;
+    color: var(--Yellow-500);
+}
+
+.grid-content .box-2 figure {
+    width: 30%;
+}
+
+.grid-content .box-2 figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-content .box-3 {
+    grid-area: box3;
+    background-color: var(--Purple-100);
+    padding: 15% 5% 0% 20% ;
+    overflow: hidden;
+}
+
+.grid-content .box-3 h2 {
+    font-size: 1.5pc;
+}
+
+.grid-content .box-3 figure {
+    width: 100%;
+    height: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-content .box-3 figure img {
+    width: 180%;
+    height: 100%;
+}
+
+.grid-content .box-4 {
+    grid-area: box6;
+    background-color: var(--Yellow-500);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid-content .box-4 h2 {
+    font-size: 2.5pc;
+    font-weight: 500;
+    width: 60%;
+}
+
+.grid-content .box-4 figure {
+    width: 80%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.grid-content .box-4 figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-content .box-5 {
+    grid-area: box4;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 10%;
+}
+
+.grid-content .box-5 figcaption {
+    width: 80%;
+}
+
+.grid-content .box-5 figcaption p {
+    font-weight: 500;
+    font-size: 2pc;
+}
+
+.grid-content .box-5 figure {
+    width: 60%;
+}
+
+.grid-content .box-5 figure img {
+    width: 200%;
+    height: 50px;
+}
+
+.grid-content .box-6 {
+    grid-area: box5;
+    background-color: var(--Yellow-500);
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.grid-content .box-6 h2 {
+    font-weight: 500;
+    font-size: 2.5pc;
+    width: 90%;   
+}
+
+.grid-content .box-6 figure {
+    width: 100%;
+    align-self: center;
+}
+
+.grid-content .box-6 figure img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.grid-content .box-7 {
+    grid-area: box7;
+    background-color: var(--White);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-content .box-7 span {
+    font-size: 4pc;
+    font-weight: bolder;
+}
+
+.grid-content .box-7 figure  {
+    width: 80%;
+    margin-top: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-content .box-7 figure img {
+    width: 80%;
+}
+
+
+.grid-content .box-8 {
+    grid-area: box8;
+    background-color: var(--Purple-500);
+    display: flex;
+    padding: 10%;
+    color: white;
+    justify-content: space-between;
+}
+
+.grid-content .box-8 figure {
+    width: 60%;
+    height: 100%;
+}
+
+.grid-content .box-8 figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-content .box-8 figcaption {
+    align-self: center;
+    margin-left: 20px;   
+}
+
+.grid-content .box-8 figcaption p {
+    font-size: 2pc;
+    font-weight: 500;
+}
